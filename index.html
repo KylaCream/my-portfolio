@@ -197,6 +197,25 @@
     .mobile-menu a { text-decoration: none; font-size: 0.88rem; font-weight: 500; color: var(--gray); padding: 0.5rem 0; border-bottom: 1px solid var(--rose-pale); transition: color 0.2s; }
     .mobile-menu a:hover, .mobile-menu a.active { color: var(--rose); }
 
+
+    /* TOOL TAGS */
+    .tool-tag {
+      display: inline-flex !important; align-items: center; gap: 0.6rem;
+      padding: 0.55rem 1rem !important; border-radius: 0.85rem !important;
+      background: var(--white) !important; border: 1.5px solid var(--rose-light) !important;
+      transition: all 0.22s !important; cursor: default;
+    }
+    .tool-tag:hover {
+      background: var(--rose) !important; border-color: var(--rose) !important;
+      color: var(--white) !important; transform: translateY(-3px) !important;
+      box-shadow: 0 6px 20px rgba(200,100,122,0.25);
+    }
+    .tool-icon { font-size: 1.1rem; line-height: 1; flex-shrink: 0; }
+    .tool-info { display: flex; flex-direction: column; gap: 0.05rem; }
+    .tool-name { font-size: 0.84rem; font-weight: 600; color: var(--dark); line-height: 1.2; }
+    .tool-cat { font-size: 0.68rem; color: var(--gray); font-weight: 400; line-height: 1; }
+    .tool-tag:hover .tool-name, .tool-tag:hover .tool-cat { color: var(--white); }
+
     @media (max-width: 820px) {
       nav ul, .nav-hire { display: none; }
       .hamburger { display: flex; }
@@ -355,10 +374,72 @@
     <h2 class="section-title reveal d1">Skills</h2>
     <div class="skills-categories">
       <div class="skill-group reveal d1"><h3>Professional Skills</h3><div class="skill-tags"><span class="skill-tag">Leadership</span><span class="skill-tag">Problem Solving</span><span class="skill-tag">Project Management</span><span class="skill-tag">Customer Service</span></div></div>
-      <div class="skill-group reveal d2"><h3>Technical Skills</h3><div class="skill-tags"><span class="skill-tag">MS Office</span><span class="skill-tag">Data Analysis</span><span class="skill-tag">Document Management</span><span class="skill-tag">Cisco Packet Tracer</span></div></div>
-      <div class="skill-group reveal d3"><h3>Communication</h3><div class="skill-tags"><span class="skill-tag">Active Listening</span><span class="skill-tag">Written Communication</span><span class="skill-tag">Interpersonal Skills</span><span class="skill-tag">Client Relations</span></div></div>
-      <div class="skill-group reveal d4"><h3>Tech Knowledge</h3><div class="skill-tags"><span class="skill-tag">IoT & Digital Transformation</span><span class="skill-tag">Cybersecurity</span><span class="skill-tag">AI Fundamentals</span><span class="skill-tag">Networking Basics</span></div></div>
-      <div class="skill-group reveal d5"><h3>Languages</h3><div class="skill-tags"><span class="skill-tag">Filipino – Native</span><span class="skill-tag">Cebuano – Native</span><span class="skill-tag">English – Intermediate</span></div></div>
+      <div class="skill-group reveal d2"><h3>Communication</h3><div class="skill-tags"><span class="skill-tag">Active Listening</span><span class="skill-tag">Written Communication</span><span class="skill-tag">Interpersonal Skills</span><span class="skill-tag">Client Relations</span></div></div>
+      <div class="skill-group reveal d3"><h3>Tech Knowledge</h3><div class="skill-tags"><span class="skill-tag">IoT & Digital Transformation</span><span class="skill-tag">Cybersecurity</span><span class="skill-tag">AI Fundamentals</span><span class="skill-tag">Networking Basics</span></div></div>
+      <div class="skill-group reveal d4"><h3>Languages</h3><div class="skill-tags"><span class="skill-tag">Filipino – Native</span><span class="skill-tag">Cebuano – Native</span><span class="skill-tag">English – Intermediate</span></div></div>
+
+      <!-- TOOLS & SOFTWARE - full width -->
+      <div class="skill-group reveal d5" style="grid-column:1/-1;">
+        <h3>Tools &amp; Software</h3>
+        <div class="skill-tags" style="gap:0.65rem;">
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">📄</span>
+            <span class="tool-info"><span class="tool-name">MS Office</span><span class="tool-cat">Productivity</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">⚙️</span>
+            <span class="tool-info"><span class="tool-name">SDK6800</span><span class="tool-cat">Assembly / Embedded</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">📐</span>
+            <span class="tool-info"><span class="tool-name">AutoCAD</span><span class="tool-cat">Drafting &amp; Design</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">🔌</span>
+            <span class="tool-info"><span class="tool-name">Proteus 8</span><span class="tool-cat">Circuit Simulation</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">📊</span>
+            <span class="tool-info"><span class="tool-name">MATLAB</span><span class="tool-cat">Computation &amp; Analysis</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">💾</span>
+            <span class="tool-info"><span class="tool-name">Quartus</span><span class="tool-cat">HDL / FPGA</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">💻</span>
+            <span class="tool-info"><span class="tool-name">Visual Studio</span><span class="tool-cat">General Coding</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">🐍</span>
+            <span class="tool-info"><span class="tool-name">Thonny</span><span class="tool-cat">Python Coding</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">➕</span>
+            <span class="tool-info"><span class="tool-name">Dev-C++</span><span class="tool-cat">C++ Coding</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">🔧</span>
+            <span class="tool-info"><span class="tool-name">EMU8086</span><span class="tool-cat">Assembly / Embedded</span></span>
+          </span>
+
+          <span class="skill-tag tool-tag">
+            <span class="tool-icon">🌐</span>
+            <span class="tool-info"><span class="tool-name">Cisco Packet Tracer</span><span class="tool-cat">Networking</span></span>
+          </span>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
